@@ -1,0 +1,152 @@
+/* font-family: "Lora", serif; */
+/* font-family: "Overpass", sans-serif; */
+
+/* COLORS */
+
+/* color: #06283d; */
+/* background-color: #dff6ff; */
+/* color: #1363df; */
+
+:root {
+  --color-dark-blue: #06283d;
+  --color-light-blue: #1363df;
+  --color-varient-white: #dff6ff;
+  --font-body: "Overpass", sans-serif;
+  --font-heading: "Lora", serif;
+  --box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+  --border-radius: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem 3rem 2rem;
+  font-family: var(--font-body);
+  max-width: 140rem;
+  width: 100%;
+  height: 98vh;
+  margin: 0 auto;
+}
+
+.container__left,
+.container__right {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.header {
+  height: 5rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 90%;
+  width: 100%;
+}
+
+.container__left {
+  height: 100%;
+  width: 70%;
+  padding: 2.5rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container__right {
+  height: 100%;
+  width: 30%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: var(--color-dark-blue);
+  color: var(--color-varient-white);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: var(--font-body);
+  border-bottom: 2px solid var(--color-varient-white);
+  transition: all 0.1s ease-out;
+  margin: 0.8rem;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--color-light-blue);
+  color: var(--color-varient-white);
+}
+
+.btn:active {
+  border-bottom: none;
+}
+
+.bar {
+  height: 0;
+  background-color: var(--color-light-blue);
+  margin: 0 0.4rem;
+  /* width: 3.5rem; */
+  width: 3.5%;
+  transition: all 0.2s ease-in-out;
+}
+
+.drop {
+  grid-column: 1 / span 2;
+}
+
+.drop-container {
+  width: 100%;
+}
+
+.drop-list {
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.drop-list:hover {
+  background-color: var(--color-light-blue);
+  color: var(--color-varient-white);
+}
+
+.drop {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-secondary {
+  margin: 0 0 0.8rem;
+  padding: 1.5rem 0;
+}
