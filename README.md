@@ -11,5 +11,5 @@ This is a project that helps to visualize sorting algorithms like merger sort, s
   <li>Selection Sort </li>
  </ol>
  
- ### Link for the project
+ <h4><a href="https://githubsumanth.github.io/SortingVisualizer/"> Go to Sorting Visualizer</a></h4>
  
